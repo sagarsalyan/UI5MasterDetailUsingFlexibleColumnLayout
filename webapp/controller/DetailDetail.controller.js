@@ -15,9 +15,11 @@ sap.ui.define([
 
 			this.oRouter = oOwnerComponent.getRouter();
 			this.oModel = oOwnerComponent.getModel();
+			this.oRouter.getRoute("master").attachPatternMatched(this._onBrandMatched, this);
+			this.oRouter.getRoute("detail").attachPatternMatched(this._onBrandMatched, this);
 			this.oRouter.getRoute("detaildetail").attachPatternMatched(this._onBrandMatched, this);
 		},
-		_onBrandMatched:function(oEvent){
+		_onBrandMatched: function (oEvent) {
 			this._type = oEvent.getParameter("arguments").type || this._type || "0";
 			this._brand = oEvent.getParameter("arguments").brand || this._brand || "0";
 			this.getView().bindElement({
