@@ -1,0 +1,111 @@
+{
+	"ProductCollection": [{
+		"ProductId": "001",
+		"Type": "Desktops",
+		"Available": 3,
+		"Companies": [{
+			"CompName": "Acer",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Acer001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Acer002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Acer003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}, {
+			"CompName": "Dell",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Dell001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Dell002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Dell003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}, {
+			"CompName": "Lenovo",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Lenovo001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Lenovo002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Lenovo003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}]
+
+	}, {
+		"ProductId": "002",
+		"Type": "Laptops",
+		"Available": 3,
+		"Companies": [{
+			"CompName": "Realme",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Realme001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Realme002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Realme003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}, {
+			"CompName": "Apple",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Apple001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Apple002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Apple003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}, {
+			"CompName": "Lenovo",
+			"AvailableModels": 3,
+			"Models": [{
+				"ProdName": "Lenovo001",
+				"Price": "35000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Lenovo002",
+				"Price": "36000",
+				"CurrencyCode": "INR"
+			}, {
+				"ProdName": "Lenovo003",
+				"Price": "37000",
+				"CurrencyCode": "INR"
+			}]
+		}]
+
+	}]
+}

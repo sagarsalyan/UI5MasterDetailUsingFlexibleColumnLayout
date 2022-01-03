@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="app.MasterDetailUsingFlexibleColumnLayout.controller.DetailDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{products>CompName}">
+				<content>
+					<Table id="productsTable" inset="false" items="{ path: 'products>Models', sorter: { path: 'ProdName' } }"
+						class="sapFDynamicPageAlignContent" width="auto">
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column hAlign="End">
+								<Text text="Price"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Navigation" press="onListItemPress">
+								<cells>
+									<ObjectIdentifier title="{products>ProdName}"/>
+									<ObjectNumber
+										number="{ parts:[ {path:'products>Price'}, {path:'products>CurrencyCode'} ], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+										unit="{products>CurrencyCode}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
