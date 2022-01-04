@@ -13,7 +13,7 @@
 		</headerTitle>
 		<headerContent>
 			<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
-				<f:Avatar displaySize="L" displayShape="Square" class="sapUiTinyMarginEnd"></f:Avatar>
+				<f:Avatar displaySize="L" displayShape="Square" class="sapUiTinyMarginEnd" src="{products>Icon}"></f:Avatar>
 				<m:VBox justifyContent="Center" class="sapUiSmallMarginEnd">
 					<m:Label text="Product ID"/>
 					<m:Text text="{products>ProductId}"/>

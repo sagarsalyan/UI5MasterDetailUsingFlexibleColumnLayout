@@ -1,6 +1,7 @@
 {
 	"ProductCollection": [{
 		"ProductId": "001",
+		"Icon":"https://www.seekpng.com/png/full/107-1070746_desktop-computer-on-black-square-background-vector-desktop.png",
 		"Type": "Desktops",
 		"Available": 3,
 		"Companies": [{
@@ -56,6 +57,7 @@
 	}, {
 		"ProductId": "002",
 		"Type": "Laptops",
+		"Icon":"https://pic.onlinewebfonts.com/svg/img_470789.png",
 		"Available": 3,
 		"Companies": [{
 			"CompName": "Realme",

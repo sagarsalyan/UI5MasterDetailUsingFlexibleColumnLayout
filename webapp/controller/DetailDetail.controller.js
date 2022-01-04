@@ -26,6 +26,16 @@ sap.ui.define([
 				path: "/ProductCollection/" + this._type + "/Companies/" + this._brand,
 				model: "products"
 			});
+		},
+		openDialog:function(oEvent){
+			var oDialog = new sap.m.Dialog({
+				content:[
+					new sap.m.Text({
+						text:"I am Dialog"
+					})
+				]
+			});
+			oDialog.open();
 		}
 
 		/**
