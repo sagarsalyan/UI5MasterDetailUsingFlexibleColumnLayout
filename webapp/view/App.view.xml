@@ -1,4 +1,13 @@
 <mvc:View controllerName="app.MasterDetailUsingFlexibleColumnLayout.controller.App" height="100%" xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f">
-	<f:FlexibleColumnLayout id="app" backgroundDesign="Solid" stateChange=".onStateChanged" layout="{appView>/layout}"></f:FlexibleColumnLayout>
+	<App id="app">
+		<Page title="My Flex Column">
+			<headerContent>
+				<Button text="Create"/>
+			</headerContent>
+			<content>
+				<f:FlexibleColumnLayout id="flex" backgroundDesign="Solid" stateChange=".onStateChanged" layout="{appView>/layout}"></f:FlexibleColumnLayout>
+			</content>
+		</Page>
+	</App>
 </mvc:View>

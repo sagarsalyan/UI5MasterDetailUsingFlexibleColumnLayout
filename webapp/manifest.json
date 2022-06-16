@@ -114,20 +114,25 @@
 			"targets": {
 				"master": {
 					"viewName": "Master",
-					"controlAggregation": "beginColumnPages"
+					"controlAggregation": "beginColumnPages",
+					"controlId":"flex"
 				},
 				"detail": {
 					"viewName": "Detail",
-					"controlAggregation": "midColumnPages"
+					"controlAggregation": "midColumnPages",
+					"controlId":"flex"
+					
 				},
 				"detaildetail": {
 					"viewName": "DetailDetail",
-					"controlAggregation": "endColumnPages"
+					"controlAggregation": "endColumnPages",
+					"controlId":"flex"
 				},
 				"detail2": {
 					"viewType": "XML",
 					"viewName": "Detail2",
-					"controlAggregation": "midColumnPages"
+					"controlAggregation": "midColumnPages",
+					"controlId":"flex"
 				}
 			}
 		}
