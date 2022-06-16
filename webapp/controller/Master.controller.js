@@ -6,7 +6,7 @@ sap.ui.define([
 	'sap/ui/model/Sorter',
 	'sap/m/MessageBox',
 	'sap/f/library'
-], function (Controller, JSONModel, Filter, FilterOperator, Sorter, MessageBox,fioriLibrary) {
+], function (Controller, JSONModel, Filter, FilterOperator, Sorter, MessageBox, fioriLibrary) {
 	"use strict";
 
 	return Controller.extend("app.MasterDetailUsingFlexibleColumnLayout.controller.Master", {
@@ -20,7 +20,7 @@ sap.ui.define([
 			this.oView = this.getView();
 			this._bDescendingSort = false;
 			this.oProductsTable = this.oView.byId("productsTable");
-			this.oRouter=this.getOwnerComponent().getRouter();
+			this.oRouter = this.getOwnerComponent().getRouter();
 		},
 
 		onSearch: function (oEvent) {
@@ -48,12 +48,19 @@ sap.ui.define([
 			oBinding.sort(oSorter);
 		},
 		onListItemPress: function (oEvent) {
+			this.getView().getParent().getParent().removeAllMidColumnPages();
 			var typePath = oEvent.getSource().getBindingContext("products").getPath(),
 				type = typePath.split("/").slice(-1).pop();
 
 			this.oRouter.navTo("detail", {
 				layout: fioriLibrary.LayoutType.TwoColumnsMidExpanded,
 				type: type
+			});
+		},
+		onDetail2: function (oEvent) {
+			this.getView().getParent().getParent().removeAllMidColumnPages();
+			this.oRouter.navTo("detail2", {
+				layout: fioriLibrary.LayoutType.TwoColumnsMidExpanded
 			});
 		}
 

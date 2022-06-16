@@ -39,7 +39,7 @@
 			"viewName": "app.MasterDetailUsingFlexibleColumnLayout.view.App",
 			"type": "XML",
 			"async": true,
-			"id": "app"
+			"id": "apppp"
 		},
 		"dependencies": {
 			"minUI5Version": "1.65.6",
@@ -92,7 +92,16 @@
 						"master",
 						"detail"
 					]
-				},{
+				},
+				{
+					"pattern": "detail2/{layout}",
+					"name": "detail2",
+					"target": [
+						"master",
+						"detail2"
+					]
+				},
+				{
 					"pattern": "detaildetail/{type}/{brand}/{layout}",
 					"name": "detaildetail",
 					"target": [
@@ -114,6 +123,11 @@
 				"detaildetail": {
 					"viewName": "DetailDetail",
 					"controlAggregation": "endColumnPages"
+				},
+				"detail2": {
+					"viewType": "XML",
+					"viewName": "Detail2",
+					"controlAggregation": "midColumnPages"
 				}
 			}
 		}

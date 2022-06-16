@@ -39,7 +39,6 @@ sap.ui.define([
 		onListItemPress:function(oEvent){
 			var brandPath = oEvent.getSource().getBindingContext("products").getPath(),
 				brand = brandPath.split("/").slice(-1).pop();
-
 			this.oRouter.navTo("detaildetail", {
 				layout: fioriLibrary.LayoutType.ThreeColumnsMidExpanded,
 				type:this._type,
