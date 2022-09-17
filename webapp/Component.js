@@ -34,6 +34,9 @@ sap.ui.define([
 			// enable routing
 			this.getRouter().attachBeforeRouteMatched(this._onBeforeRouteMatched, this);
 			this.getRouter().initialize();
+			
+			
+			//test
 
 			
 		},
